@@ -51,7 +51,7 @@
   * a new flex-box method `order` 📸
 
 <a name="Screenshots"></a>
-## 2. Screenshots 📸
+## 3. Screenshots 📸
 
   ![Hanover Football club — Mozilla Firefox 17-09-2023 11_02_15](https://github.com/MrSandeepSharma/Hanover-Football-Club/assets/142038020/c8dd6ec5-db93-400b-a523-d9a42317c802)
 
