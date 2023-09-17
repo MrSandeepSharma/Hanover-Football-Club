@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+/* typography */
+h1,
+h2,
+.top-text {
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  color: #148a38;
+}
+
+h1 {
+  font-size: 9vw;
+  text-shadow: 0 1px black;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  line-height: 1.35;
+}
+
+.top-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  order: -1;
+  border-top: 4px solid white;
+  padding-top: 0.5em;
+  margin: 0 auto;
+}
+
+.beta-text {
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+/* utility classes */
+.special-font {
+  font-family: "Graduate", serif;
+}
+
+/* Layout */
+.intro-container,
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+}
+
+.intro-container {
+  min-height: 320px;
+  background: url("images/bg.jpg");
+  background-size: cover;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+.main-container {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.main-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.main-container p,
+input,
+button {
+  max-width: 400px;
+}
+
+.main-container p {
+  text-align: left;
+}
+
+input,
+button {
+  width: 100%;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+input {
+  padding: 0.5em;
+  border: 2px solid #148a38;
+  color: black;
+  margin-bottom: 0.5em;
+}
+
+input:focus {
+  outline: 0;
+  border-color: black;
+}
+
+.btn {
+  padding: 0.75em;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #148a38;
+  color: white;
+  margin-top: 1em;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .hero-section {
+    display: flex;
+  }
+
+  .intro-container,
+  .main-container {
+    width: 50%;
+  }
+
+  .intro-container {
+    min-height: 100vh;
+    align-items: center;
+    padding-bottom: 1em;
+  }
+
+  .main-container {
+    justify-content: center;
+  }
+
+  .main-container p,
+  input,
+  button {
+    max-width: 450px;
+  }
+}
